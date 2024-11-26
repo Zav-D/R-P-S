@@ -1,0 +1,50 @@
+<!-- video starts at 6:01:00 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RPS Final</title>
+        <link rel="stylesheet" 
+    href="style.css">
+
+</head>
+    <body>
+        <p class="title" > Rock Paper scissors </p>
+
+        <button onclick=" 
+        playGame('rock');
+        "class="move-button"><img src="img/rock.png" class="move-icon"></button>
+
+        <button onclick="
+        playGame('paper');
+        "class="move-button"><img src="img/paper.png" class="move-icon"></button>
+
+        <button onclick=" 
+        playGame('scissors');
+        "class="move-button"><img src="img/scissors.png" class="move-icon"></button>
+
+
+        <p class="js-result result"></p>
+        <p class="js-state">
+
+        </p>
+         <!-- score line = this p live inside of updateScoreElement()function -->
+        <p class="js-score score"></p>  
+       
+
+        <button onclick=" //reset score button 
+                score.wins = 0,
+                score.losses = 0,
+                score.ties = 0
+                updateScoreElement(); //update score line
+                " class="reset-score-button"> Reset Score </button>
+        
+        <script src="11-R-P-S-css.js">       
+         //script elemnat run first when we upload page
+        //laoding js file
+
+        </script>
+    </body>
+ 
+</html>
